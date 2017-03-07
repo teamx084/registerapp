@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create__employee__screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mark.create_employee_screen.Create_Employee_Screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Create Your First User"
+        tools:text="Please Create Your First User"
+        android:id="@+id/header" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lastName"
+        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+        android:singleLine="false"
+        android:layout_below="@+id/firstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:hint="Last Name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/saveButton"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:elevation="24dp"
+        android:visibility="visible"
+        tools:text="Save" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/loginpassword"
+        style="@android:style/Widget.Holo.Light.EditText"
+        android:contentDescription="Password"
+        android:layout_marginTop="51dp"
+        android:hint="Password"
+        android:layout_below="@+id/lastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+ />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstName"
+        android:hint="First Name"
+        style="@android:style/Widget.Holo.Light.AutoCompleteTextView"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
