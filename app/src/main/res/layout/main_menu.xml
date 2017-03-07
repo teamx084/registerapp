@@ -35,7 +35,8 @@
         	android:layout_width="wrap_content"         
         	android:layout_height="wrap_content"         
         	android:text="Welcome, NAME! Select an action:"         
-        	android:textAppearance="@style/TextAppearance.AppCompat.Body1"         android:id="@+id/welcomeMsg"         
+        	android:textAppearance="@style/TextAppearance.AppCompat.Body1"         
+            android:id="@+id/welcomeMsg"         
         	android:layout_alignParentTop="true"         
         	android:layout_centerHorizontal="true" />      
 
